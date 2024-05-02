@@ -48,7 +48,7 @@
   "dependencies": {
     "echarts": "^5.4.2",
     "flowbite-svelte": "^0.38.5",
-    "fuse": "^0.4.0",
+    "fuse": "^0.12.1",
     "fuse.js": "^6.6.2",
     "ramda": "^0.29.0",
     "sse.js": "^0.6.1",
