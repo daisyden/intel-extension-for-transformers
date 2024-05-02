@@ -23,7 +23,7 @@
 host: 0.0.0.0
 port: 8888
 
-model_name_or_path: "Intel/neural-chat-7b-v3-1"
+model_name_or_path: "/home/daisyden/school/Baichuan2/fine-tune/output_3"
 device: "cpu"
 
 asr:
@@ -32,16 +32,16 @@ asr:
         # support cpu, hpu, xpu, cuda
         device: "cpu"
         # support openai/whisper series
-        model_name_or_path: "openai/whisper-small"
+        model_name_or_path: "openai/whisper-large"
         # only can be set to true when the device is set to "cpu"
         bf16: false
 
 tts:
-    enable: false
+    enable: false 
     args:
         device: "cpu"
         voice: "default"
-        stream_mode: true
+        stream_mode: false 
         output_audio_path: "./output_audio"
 
 tts_multilang:
@@ -49,7 +49,7 @@ tts_multilang:
     args:
         device: "cpu"
         precision: "fp32"
-        stream_mode: true
+        stream_mode: true 
 
 # task choices = ['textchat', 'voicechat', 'retrieval', 'text2image', 'finetune']
 tasks_list: ['voicechat']

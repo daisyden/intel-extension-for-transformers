@@ -109,7 +109,7 @@
 	>
 		<ChatMessage
 			type="assistant"
-			message={`Welcome to Neural Chat! 😊`}
+			message={`欢迎使用SFLS-洋桥村Neural Chat! 😊`}
 			displayTimer={false}
 		/>
 		{#each chatMessages as message, idx (message)}

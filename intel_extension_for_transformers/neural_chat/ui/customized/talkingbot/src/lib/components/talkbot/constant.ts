@@ -54,8 +54,8 @@ export const TalkingKnowledgeLibrary = [
 
 export const TalkingTemplateLibrary = [
     { name: "", avatar: JohnAvatar, audio: PatVoice, knowledge: 'Young_Pat', identify: "default_male" },
-    { name: "", avatar: annAvatar, audio: WeiVoice, knowledge: 'Young_Wei', identify: "wei" },
-    { name: "", avatar: humaAvatar, audio: HumaVoice, knowledge: 'Young_Huma', identify: "huma" },
+    // { name: "", avatar: annAvatar, audio: WeiVoice, knowledge: 'Young_Wei', identify: "wei" },
+    // { name: "", avatar: humaAvatar, audio: HumaVoice, knowledge: 'Young_Huma', identify: "huma" },
     // { name: "Andy Grove", avatar: andyAvatar, audio: AndyVoice, knowledge: 'Young_Andy', identify: "andy" },
 ];
 

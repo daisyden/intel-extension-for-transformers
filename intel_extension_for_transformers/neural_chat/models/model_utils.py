@@ -643,6 +643,7 @@ def load_model(
             or config.model_type == "mixtral"
             or config.model_type == "phi"
             or config.model_type == "deci"
+            or config.model_type == "baichuan"
         ) and not ipex_int8) or config.model_type == "opt":
             with smart_context_manager(use_deepspeed=use_deepspeed):
                 model = AutoModelForCausalLM.from_pretrained(
@@ -652,7 +653,7 @@ def load_model(
                     low_cpu_mem_usage=True,
                     quantization_config=bitsandbytes_quant_config,
                     trust_remote_code=True if (config.model_type == "qwen" or config.model_type == "phi" or \
-                        re.search("codegen", model_name, re.IGNORECASE) or config.model_type == "deci") else False
+                        re.search("codegen", model_name, re.IGNORECASE) or config.model_type == "deci" or config.model_type == "baichuan" ) else False
                 )
         elif config.model_type == "biogpt":
             from transformers import BioGptForCausalLM
@@ -1520,6 +1521,7 @@ def predict(**params):
                                 generation_config=generation_config,
                                 return_dict_in_generate=True
                             )
+                
         except Exception as e:
             logging.error(f"model.generate exception: {e}")
             set_latest_error(ErrorCodes.ERROR_MODEL_INFERENCE_FAIL)

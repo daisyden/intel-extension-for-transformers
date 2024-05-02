@@ -25,27 +25,28 @@ interface MenuItem {
 }
 
 const data: MenuItem[] = [
+  // {
+  //   title: 'Home',
+  //   icon: DocumentationIcon,
+  //   link: '/'
+  // }, {
+  //   title: 'Template',
+  //   icon: TemplateIcon,
+  //   link: '/template'
+  // }, {
+  //   title: 'Avatar',
+  //   icon: AvatarIcon,
+  //   link: '/avatar'
+  // }, {
+  //   title: 'Voice',
+  //   icon: VoiceIcon,
+  //   link: '/voice'
+  // }, {
+  //   title: 'Knowledge',
+  //   icon: KnowledgeIcon,
+  //   link: '/knowledge'
+  // }, 
   {
-    title: 'Home',
-    icon: DocumentationIcon,
-    link: '/'
-  }, {
-    title: 'Template',
-    icon: TemplateIcon,
-    link: '/template'
-  }, {
-    title: 'Avatar',
-    icon: AvatarIcon,
-    link: '/avatar'
-  }, {
-    title: 'Voice',
-    icon: VoiceIcon,
-    link: '/voice'
-  }, {
-    title: 'Knowledge',
-    icon: KnowledgeIcon,
-    link: '/knowledge'
-  }, {
     title: 'Chat',
     icon: HomeIcon,
     link: '/chat'

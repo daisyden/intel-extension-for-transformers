@@ -38,7 +38,7 @@
 						&#8801;
 					</button> 
 				</div>
-				<p class="mt-2 font-bold text-xl">Neural Chat</p>
+				<p class="mt-2 font-bold text-xl">SFLS-洋桥村 Neural Chat </p>
 			</div>
 		</div>
 	</div>
